@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/888/888228.png?w=740&t=st=1691423084~exp=1691423684~hmac=d7548ea7596c92f3b1b7c8911995cb6c5af875b11e2740f94656f1347a784819">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container text-center h1 heading">Qr Code Generator</div>
+    <div class="grid container">  
+        <div class="row text-center align-items-center ">
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid h-75 w-75" src="https://img.freepik.com/free-vector/qr-code-concept-illustration_114360-5583.jpg?w=740&t=st=1691316749~exp=1691317349~hmac=c94fdcf3adfef58a7e519a09db243b5d18d7180e8a0d9ce0eeefe7f30b06d583images/passphoto1.jpeg" />
+                </div>
+                <div class="col-12 col-md-6">
+                    <center>
+                        <img src="" id="img"></center>
+                
+                        <select id="size" class="text-light">
+                            <option value="100">100x100</option>
+                            <option value="150">150x150</option>
+                            <option value="200">200x200</option>
+                            <option value="250" selected>250x250</option>
+                            <option value="300">300x300</option>
+                        </select>
+                        <br><br>
+                        <textarea class="text-light" placeholder="Enter Your Text" id="qrtext"></textarea>
+                        <br><br>
+                        <input type="submit" class="submit-btn" value="Generate" onclick="genQR()">
+                </div>
+            </div>
+            
+    </div>
+    <div class="text-center">Developed by @adityauke</div>
+</body>
+</html>
